@@ -22,25 +22,26 @@
 </head>
 <body>
     <!--main with wrapper-->
-    <main id="main container-sm">
         <!--Skip links for accessibility guidlines-->
-        <ul role="list" class="skip-links">
-            <li role="listitem" ><a href="#nav" aria-label="Skip to the Navigation">Skip to nav</a></li>
-            <li role="listitem"><a href="#main" aria-label="Skip to main">Skip to main content</a></li>
-            <li role="listitem"><a href="#footer" aria-label="Skip to the welcome section">Skip to footer</a></li>
-          </ul>
+        <div>
+            <ul role="list" class="skip-links">
+                <li role="listitem" ><a href="#nav" aria-label="Skip to the Navigation">Skip to nav</a></li>
+                <li role="listitem"><a href="#main" aria-label="Skip to main">Skip to main content</a></li>
+                <li role="listitem"><a href="#footer" aria-label="Skip to the welcome section">Skip to footer</a></li>
+              </ul>
+        </div>
         <header>
             <!--Navbar from bootstrap, changed colors and list items-->
             <nav id="nav" class="navbar navbar-expand-sm bg-info text-white padding-on-text">
                 <div class="container-fluid">
-                  <a class="navbar-brand text-white logo" href="#">AP</a>
+                  <a class="navbar-brand text-white logo" href="index.html">AP</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active text-white navfont" aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link active text-white navfont" aria-current="page" href="index.html">Home</a>
                         <a class="nav-link active text-white navfont" aria-current="page" href="contact.html">Contact Us</a>
                         <a class="nav-link active text-white navfont" aria-current="page" href="about-us.html">About</a>
                         <a class="nav-link active text-white navfont" aria-current="page" href="portfolio.html">Portfolio</a>
@@ -54,10 +55,33 @@
                 </div>
               </nav>
         </header>
+
+        <main id="main">
+        <div class="text-center contact-sect">
+            <h1>Contact Us Now!</h1>
+        </div>
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Full Name</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1">Request</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+          <img class="contact-img" src="images/contact-page/coffeshop_pixabay.jpg" alt="coffee on table">
     </main>
 
-    <!--Foter with copyright-->
-    <footer id="footer" class="padding-on-text">
+    <!--Footer with copyright-->
+    <footer id="footer" class="padding-on-text bg-info text-white">
         <p>&#169; Arany Paramalingam, 2023</p>
     </footer>
 

@@ -21,26 +21,26 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <!--main with wrapper-->
-    <main id="main container-sm">
+    <div>
         <!--Skip links for accessibility guidlines-->
         <ul role="list" class="skip-links">
             <li role="listitem" ><a href="#nav" aria-label="Skip to the Navigation">Skip to nav</a></li>
             <li role="listitem"><a href="#main" aria-label="Skip to main">Skip to main content</a></li>
             <li role="listitem"><a href="#footer" aria-label="Skip to the welcome section">Skip to footer</a></li>
           </ul>
+    </div>
         <header>
             <!--Navbar from bootstrap, changed colors and list items-->
             <nav id="nav" class="navbar navbar-expand-sm bg-info text-white padding-on-text">
                 <div class="container-fluid">
-                  <a class="navbar-brand text-white logo" href="#">AP</a>
+                  <a class="navbar-brand text-white logo" href="index.html">AP</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active text-white navfont" aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link active text-white navfont" aria-current="page" href="index.html">Home</a>
                         <a class="nav-link active text-white navfont" aria-current="page" href="contact.html">Contact Us</a>
                         <a class="nav-link active text-white navfont" aria-current="page" href="about-us.html">About</a>
                         <a class="nav-link active text-white navfont" aria-current="page" href="portfolio.html">Portfolio</a>
@@ -54,10 +54,12 @@
                 </div>
               </nav>
         </header>
+    <!--main with wrapper-->
+    <main id="main">
     </main>
 
     <!--Foter with copyright-->
-    <footer id="footer" class="padding-on-text">
+    <footer id="footer" class="padding-on-text bg-info text-white">
         <p>&#169; Arany Paramalingam, 2023</p>
     </footer>
 
