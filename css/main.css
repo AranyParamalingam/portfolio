@@ -175,6 +175,34 @@ form label, form button {
     margin-left: 10%;
 }
 
+*skip links list*/
+.skip-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*making skip links be hidding and appear when tab is pressed*/
+.skip-links a{
+    background: #826cff;
+    color: #f3f7ff;
+    border: 1px solid white;
+    height: 40px;
+    left: 0%;
+    margin-left: 7%;
+    margin-top: 16%;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+}
+
+/*transformstion for skip-links*/
+.skip-links a:focus {
+    transform: translateY(0%);
+}
+
 /* Styles for footer */
 footer {
     margin-top: 8%;
@@ -322,7 +350,7 @@ form label, form button {
 .mywork-sect {
     font-family: 'Playfair Display', serif;
     color: red;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-top: 3.5%;
     text-align: center;
 }
@@ -333,4 +361,78 @@ form label, form button {
     margin-top: 7%;
     margin-bottom: 5%;
 }
+
+.work-container {
+    display: grid;
+        /*3 col, 4 row*/
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        padding: 2% 7% 2% 7%;
+        justify-content: center;
+}
+
+.box1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.box2 {
+    width: 100%;
+    height: 40%;
+    margin-top: 25%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.box3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+
+
+.box4 {
+    width: 100%;
+    height: 60%;
+    margin-top: 10%;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.box5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.box6 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+
+
+.box7 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.box8 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.box9 {
+    width: 125%;
+    height: 80%;
+    margin-top: 10%;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.box10 {
+    width: 150%;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
 }
