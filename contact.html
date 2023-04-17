@@ -33,9 +33,9 @@
                 <li role="listitem"><a href="#footer" aria-label="Skip to the welcome section">Skip to footer</a></li>
               </ul>
         </div>
-        <header>
+        <header role="banner">
             <!--Navbar from bootstrap, changed colors and list items-->
-            <nav id="nav" class="navbar navbar-expand-sm bg-info text-white padding-on-text">
+            <nav id="nav" class="navbar navbar-expand-sm bg-info text-white padding-on-text" role="navigation">
                 <div class="container-fluid">
                   <a class="navbar-brand text-white logo animate__animated animate__lightSpeedInLeft" href="index.html">AP</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,12 +55,12 @@
               </nav>
         </header>
 
-        <main id="main">
+        <main id="main" role="main">
         <div class="text-center contact-sect">
             <h1 class="animate__animated animate__bounce">Contact Us Now!</h1>
         </div>
 
-          <form>
+          <form itemscope itemtype="http://schema.org/ContactPage">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Full Name</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -80,7 +80,7 @@
     </main>
 
     <!--Footer with copyright-->
-    <footer id="footer" class="padding-on-text bg-info text-white">
+    <footer id="footer" class="padding-on-text bg-info text-white" role="contentinfo">
         <p>&#169; Arany Paramalingam, 2023</p>
     </footer>
 

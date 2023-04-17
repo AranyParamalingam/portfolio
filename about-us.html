@@ -32,9 +32,9 @@
                 <li role="listitem"><a href="#footer" aria-label="Skip to the welcome section">Skip to footer</a></li>
             </ul>
         </div>
-        <header>
+        <header role="banner">
             <!--Navbar from bootstrap, changed colors and list items-->
-            <nav id="nav" class="navbar navbar-expand-sm bg-info text-white padding-on-text">
+            <nav id="nav" class="navbar navbar-expand-sm bg-info text-white padding-on-text" role="navigation">
                 <div class="container-fluid">
                   <a class="navbar-brand text-white logo animate__animated animate__lightSpeedInLeft" href="index.html">AP</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,9 +55,9 @@
         </header>
 
     <!--main with wrapper-->
-    <main id="main">
+    <main id="main" role="main">
         <div class="text-center about-page-sect">
-            <h1 class="animate__animated animate__bounce" >Arany Paramalingam</h1>
+            <h1 class="animate__animated animate__bounce" itemscope itemtype="http://schema.org/Person">Arany Paramalingam</h1>
             <img src="images/about-page/Snapchat-204179317.jpg" alt="image of arany"></img>
         </div>
         <div class="aboutmebtn">
@@ -71,8 +71,8 @@
         </div>
     </main>
 
-    <!--Foter with copyright-->
-    <footer id="footer" class="padding-on-text bg-info text-white">
+    <!--Footer with copyright-->
+    <footer id="footer" class="padding-on-text bg-info text-white" role="contentinfo">
         <p>&#169; Arany Paramalingam, 2023</p>
     </footer>
 
