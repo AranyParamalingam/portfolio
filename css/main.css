@@ -1,3 +1,4 @@
+/* Default styles for HTML elements */
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -34,16 +35,19 @@ html {
     transform: translateY(0%);
 }
 
+/* Styles for logo */
 .logo {
     font-family: 'Shrikhand', cursive;
     font-size: 2rem;
 }
 
+/* Styles for navbar font */
 .navfont {
     font-family: 'Italiana', serif;
     font-size: 1.5rem;
 }
 
+/* Styles for footer */
 footer {
     margin-top: 8%;
 }
@@ -53,7 +57,7 @@ footer {
     padding: 3.5%;
 }
 
-/*the about section in homepage*/
+/* Styles for about section on homepage */
 .about-sect a img {
     width: 75%;
     height: 75%;
@@ -78,6 +82,7 @@ footer {
     margin-right: 13%;
 }
 
+/* Styles for contact section on contact page */
 .contact-sect h1 {
     font-family: 'Playfair Display', serif;
     color: red;
@@ -103,6 +108,7 @@ form label, form button {
     height: 100%;
 }
 
+/* Styles for about page section */
 .about-page-sect h1 {
     font-family: 'Playfair Display', serif;
     color: red;
@@ -133,6 +139,7 @@ form label, form button {
 
 }
 
+/* Styles for my work page */
 .mywork-sect {
     font-family: 'Playfair Display', serif;
     color: red;
@@ -146,4 +153,133 @@ form label, form button {
     height: 75%;
     margin-top: 7%;
     margin-bottom: 5%;
+}
+
+
+
+
+
+/*desktop version*/
+@media screen and (min-width: 760px){
+    /* Styles for logo */
+.logo {
+    font-family: 'Shrikhand', cursive;
+    font-size: 3rem;
+}
+
+/* Styles for navbar font */
+.navfont {
+    font-family: 'Italiana', serif;
+    font-size: 1.5rem;
+    display:inline-block;
+    margin-left: 10%;
+}
+
+/* Styles for footer */
+footer {
+    margin-top: 8%;
+}
+
+/*adds padding on foot and navbar so the text is not against the page*/
+.padding-on-text {
+    padding: 3.5%;
+}
+
+/* Styles for about section on homepage */
+.about-sect a img {
+    width: 75%;
+    height: 75%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    border: 3px solid #bf50f2;
+}
+
+.about-sect h1 {
+    font-family: 'Playfair Display', serif;
+    color: red;
+    font-size: 2rem;
+    padding-top: 3.5%;
+}
+
+.about-sect p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: orange;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-right: 13%;
+}
+
+/* Styles for contact section on contact page */
+.contact-sect h1 {
+    font-family: 'Playfair Display', serif;
+    color: red;
+    font-size: 2rem;
+    padding-top: 7%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+form {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+form label, form button {
+    margin-top: 2.5%;
+}
+
+.contact-img {
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for about page section */
+.about-page-sect h1 {
+    font-family: 'Playfair Display', serif;
+    color: red;
+    font-size: 2rem;
+    padding-top: 3.5%;
+}
+
+.about-page-sect img {
+    width: 75%;
+    height: 75%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    border: 6px solid #ff80b3;
+}
+
+.aboutmebtn a {
+    margin-top: 2%;
+    background-color: #43d76a; /* Green */
+    border: none;
+    color: white;
+    padding: 3%;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 1.2rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+
+}
+
+/* Styles for my work page */
+.mywork-sect {
+    font-family: 'Playfair Display', serif;
+    color: red;
+    font-size: 2rem;
+    padding-top: 3.5%;
+    text-align: center;
+}
+
+.work-img {
+    width: 75%;
+    height: 75%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
 }
