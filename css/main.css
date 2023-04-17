@@ -132,3 +132,18 @@ form label, form button {
     font-weight: 400;
 
 }
+
+.mywork-sect {
+    font-family: 'Playfair Display', serif;
+    color: red;
+    font-size: 2rem;
+    padding-top: 3.5%;
+    text-align: center;
+}
+
+.work-img {
+    width: 75%;
+    height: 75%;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
