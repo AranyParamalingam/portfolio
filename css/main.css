@@ -178,6 +178,7 @@ form label, form button {
 /* Styles for footer */
 footer {
     margin-top: 8%;
+    font-size: 1.1rem;
 }
 
 /*adds padding on foot and navbar so the text is not against the page*/
@@ -186,11 +187,60 @@ footer {
 }
 
 /* Styles for about section on homepage */
+/*grid for the first half*/
+.about-sect1 {
+    display: grid;
+        /*1 col, 1 row*/
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 50%;
+        padding: 2% 7% 2% 7%;
+        justify-content: center;
+}
+
+.about-sect1 a img {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.about-sect1 h1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.about-sect1 p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/*grid for the second half of the page*/
+
+.about-sect2 {
+    display: grid;
+        /*1 col, 1 row*/
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50%;
+        padding: 2% 7% 2% 7%;
+        justify-content: center;
+}
+
+.about-sect2 a img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    margin-top: 20%;
+    width: 150%;
+    height: 300%;
+}
+
+.about-sect2 p {
+    margin-top: 12%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
 .about-sect a img {
-    width: 75%;
-    height: 75%;
-    margin-top: 7%;
-    margin-bottom: 5%;
+    width: 100%;
+    height: 150%;
     border: 3px solid #bf50f2;
 }
 
@@ -208,6 +258,7 @@ footer {
     font-size: 1.5rem;
     text-align: right;
     margin-right: 13%;
+    padding-top: 10%;
 }
 
 /* Styles for contact section on contact page */
