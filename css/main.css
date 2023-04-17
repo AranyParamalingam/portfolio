@@ -127,5 +127,8 @@ form label, form button {
     text-align: center;
     text-decoration: none;
     display:block;
-    font-size: 16px;
+    font-size: 1.2rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+
 }
